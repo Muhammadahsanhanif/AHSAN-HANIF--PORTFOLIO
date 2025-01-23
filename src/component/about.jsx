@@ -30,8 +30,8 @@ export default function AboutPage() {
                     {/* Education */}
                     <div className="mb-6">
                         <p className="text-gray-400 text-lg">
-                            <span className="font-semibold text-white">Bachelor&apos;s Degree in Computer Science:</span>{" "}
-                            Federal Urdu University (2022 - Present)
+                            <span className="font-semibold text-white">EDUCATION WILL BE CONTINUE</span>{" "}
+                           GOVT  ISLAMIA ART & SCIENCE COLLEGE (2024 - Present)
                         </p>
                     </div>
                     {/* Certifications */}
