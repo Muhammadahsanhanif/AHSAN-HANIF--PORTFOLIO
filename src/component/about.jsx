@@ -39,6 +39,12 @@ export default function AboutPage() {
                         <h4 className="text-xl font-semibold text-white mb-3">Certifications</h4>
                         <ul className="list-disc pl-6 text-gray-400 text-lg">
                             <li>Javascript Essentials - Cisco (October 2024)</li>
+                            <li>Career Essentials in Generative AI by Microsoft and LinkedIn (january 2024)</li>
+                            <li>Career Essentials in GitHub Professional Certificate (february 2025)</li>
+                            <li>Microsoft Security Essentials: Concepts, Solutions, and AI-Powered Protection (february 2025)</li>
+                            <li>Reactsjs The Complete Reactjs Course for Beginners  (february 2025)</li>
+
+
                             <li>Web and Mobile App Development - Saylani Mass IT Training Center (2023 - 2024)</li>
                         </ul>
                     </div>
