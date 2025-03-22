@@ -2,17 +2,17 @@ import React from "react";
 import { motion } from "framer-motion";
 import image1 from "../assets/Screenshot 2024-11-23 175422.png";
 import image2 from "../assets/Screenshot 2024-11-23 175525.png";
-import image3 from "../assets/Screenshot 2024-11-23 175622.png";
+import image3 from "../assets/Screenshot 2025-03-06 010022.png";
 import backgroundImage from "../assets/Screenshot 2024-11-23 175323.png";
 
 export default function Projects() {
   const projectData = [
     {
       image: image3,
-      title: "Weather App",
-      description: "A weather application built with React, Firebase, and Tailwind CSS.",
-      github: "https://github.com/Muhammadahsanhanif/WEATHER-APP",
-      demo: "https://jade-melba-304ccf.netlify.app/",
+      title: "todo App",
+      description: "A TODO application built with React and Tailwind CSS.",
+      github: "https://github.com/Muhammadahsanhanif/TO-DO-APP",
+      demo: "https://to-doappbyahsanhanif.netlify.app/",
     },
     {
       image: backgroundImage,

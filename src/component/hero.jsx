@@ -1,11 +1,12 @@
 import React from "react";
 import { motion } from "framer-motion";
-import backgroundImage from "../assets/Screenshot 2024-11-22 023539.png";
+import backgroundImage from "../assets/WhatsApp Image 2025-01-06 at 00.41.59_d3105cb5.jpg";
+import resume from "../assets/AHSAN HANIF RESUME .pdf";  // Import the CV file
 
 export default function Hero() {
   return (
     <motion.section 
-      className="flex flex-col items-center justify-center bg-gradient-to-b from-black to-gray-900 text-white px-6"
+      className="flex flex-col items-center justify-center bg-gradient-to-b from-black to-gray-900 text-white px-6 py-20"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 1.5, ease: 'easeInOut' }}
@@ -42,7 +43,10 @@ export default function Hero() {
           JavaScript, Tailwind CSS, Firebase, MongoDB, Next.js, React.js, and
           Bootstrap.
         </motion.p>
-        <div className="mt-8">
+        
+        {/* Button Container - Align both buttons */}
+        <div className="mt-8 flex justify-center gap-4">
+          {/* Contact Me Button */}
           <motion.a
             href="#contact"
             className="px-8 py-3 text-lg font-medium bg-blue-500 text-white rounded-full shadow-lg hover:bg-blue-600 transition"
@@ -51,8 +55,21 @@ export default function Hero() {
           >
             Contact Me
           </motion.a>
+          
+          {/* Download CV Button */}
+          <motion.a
+            href={resume}  // Use the imported 'resume' variable here
+            download
+            className="px-8 py-3 text-lg font-medium bg-blue-500 text-white rounded-full shadow-lg hover:bg-blue-600 transition"
+            whileHover={{ scale: 1.1, y: -3 }}
+            transition={{ type: "spring", stiffness: 300 }}
+          >
+            Download My CV
+          </motion.a>
         </div>
       </div>
+      
+      {/* Profile Image */}
       <motion.div
         className="mt-10 relative w-40 h-40 md:w-56 md:h-56 lg:w-64 lg:h-64 mb-10"
         whileHover={{ scale: 1.1 }}
@@ -60,7 +77,7 @@ export default function Hero() {
       >
         <img
           src={backgroundImage}
-          alt="Muhammad Mustafa Ali"
+          alt="Ahsan Hanif"
           className="w-full h-full object-cover rounded-full border-4 border-blue-500"
         />
       </motion.div>

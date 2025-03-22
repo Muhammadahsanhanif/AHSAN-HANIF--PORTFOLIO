@@ -5,7 +5,6 @@ import Experience from "./component/expirience";
 import Footer from "./component/footer";
 import Hero from "./component/hero";
 import Header from "./component/navber";
-import ParticlesComponent from "./component/partical";
 import Projects from "./component/project";
 import Skills from "./component/skill";
 
@@ -13,7 +12,6 @@ function App() {
   return (
     <div className="relative">
       {/* Particles Background */}
-      <ParticlesComponent id="tsparticles" />
       
       {/* Main Content */}
       <div className="relative z-10">
