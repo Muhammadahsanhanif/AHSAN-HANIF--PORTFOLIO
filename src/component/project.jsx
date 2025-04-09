@@ -1,9 +1,13 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { motion } from "framer-motion";
 import image1 from "../assets/Screenshot 2024-11-23 175422.png";
 import image2 from "../assets/Screenshot 2024-11-23 175525.png";
 import image3 from "../assets/Screenshot 2025-03-06 010022.png";
 import backgroundImage from "../assets/Screenshot 2024-11-23 175323.png";
+
+// Import AOS
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 export default function Projects() {
   const projectData = [
@@ -37,6 +41,15 @@ export default function Projects() {
     },
   ];
 
+  // Initialize AOS on component mount
+  useEffect(() => {
+    AOS.init({
+      duration: 1000, // Animation duration
+      easing: "ease-in-out", // Easing function
+      once: true, // Animation happens only once
+    });
+  }, []);
+
   return (
     <motion.section
       id="projects"
@@ -65,6 +78,9 @@ export default function Projects() {
                 scale: 1.05,
                 boxShadow: "0 10px 15px rgba(0, 0, 0, 0.2)",
               }}
+              data-aos="fade-up" // AOS fade-up animation
+              data-aos-delay={index * 100} // Stagger delay for each project
+              data-aos-once="true" // Animation triggers once when in view
             >
               <div className="relative w-full h-56 mb-4 overflow-hidden rounded-lg shadow-lg">
                 <img

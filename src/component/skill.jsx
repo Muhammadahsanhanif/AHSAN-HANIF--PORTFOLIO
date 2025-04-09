@@ -48,7 +48,7 @@ const Skills = () => {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 1, ease: "easeInOut" }}
-          className="text-3xl font-bold text-teal-500 mb-6"
+          className="text-3xl font-bold text-blue-500 mb-6"
         >
           My Skills
         </motion.h2>
@@ -67,7 +67,7 @@ const Skills = () => {
               <p className="text-gray-700 font-medium">{skill.name}</p>
               <div className="w-full bg-gray-300 rounded-full h-2.5 overflow-hidden">
                 <motion.div
-                  className="bg-teal-500 h-2.5"
+                  className="bg-blue-500 h-2.5"
                   style={{ width: `${skill.percentage}%` }}
                   initial={{ width: 0 }}
                   animate={{ width: `${skill.percentage}%` }}
