@@ -23,7 +23,7 @@ import { motion } from "framer-motion";
 const skills = [
   { name: "HTML", logo: <FaHtml5 className="text-orange-500 text-4xl" />, percentage: 65 },
   { name: "CSS", logo: <FaCss3Alt className="text-blue-400 text-4xl" />, percentage: 70 },
-  { name: "JavaScript", logo: <FaJsSquare className="text-yellow-500 text-4xl" />, percentage: 85 },
+  { name: "JavaScript", logo: <FaJsSquare className="text-yellow-500 text-4xl" />, percentage: 75 },
   { name: "React.js", logo: <FaReact className="text-blue-500 text-4xl" />, percentage: 90 },
   { name: "Next.js", logo: <SiNextdotjs className="text-black text-4xl" />, percentage: 75 },
   { name: "Tailwind CSS", logo: <SiTailwindcss className="text-teal-400 text-4xl" />, percentage: 85 },
